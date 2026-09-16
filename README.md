@@ -4,8 +4,3 @@
 ### Algorithm
 - Create array of 5 integers. These will represent the positions of the 5 horses. They will all start with the value of 0.
 - 
-
-
-
-- Create a function for printing horse positions. It will take an int parameter for the horse's position.
-- 
