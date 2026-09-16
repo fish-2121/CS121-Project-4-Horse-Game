@@ -19,9 +19,18 @@ constant int for position to win
 constant int for number of horses
 
 main
-    horse pos array {0, 0, 0, 0, 0}
+    horse positions array {0, 0, 0, 0, 0}
     printPositions(horsePosArr)
 
 printPositions(array)
 
+
+
+printPositions(int passedArray) function
+    for(items in passedArray) {
+        int array = {'*', '*', '*', '*', '*', '*', '*', '*', '*', '*'}
+        array[passedArray[i]] = i
+        print array
+    }
+}
 ```
