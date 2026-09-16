@@ -12,10 +12,10 @@ int main() {
     return 0;
 }
 
-void printPositons(int positionNums[]) {
+void printPositions(int positionNums[]) {
     for (int i = 0; i < horsesAmount; i++) {
         char arr[winPos] = {'*', '*', '*', '*', '*', '*', '*', '*', '*', '*'};
-        arr[positionNums[i]] = i;
+        arr[positionNums[i]] = i + '0';
         for (int ii = 0; ii < winPos; ii++) {
             std::cout << arr[ii];
         }
