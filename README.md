@@ -27,7 +27,7 @@ printPositions(array)
 
 
 printPositions(int passedArray) function
-    for(items in passedArray) {
+    for(numOfHorses) {
         int array = {'*', '*', '*', '*', '*', '*', '*', '*', '*', '*'}
         array[passedArray[i]] = i
         print array
