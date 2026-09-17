@@ -14,6 +14,7 @@
 
 ```
 printPositons function initializer
+changePositions function initializer
 
 constant int for position to win
 constant int for number of horses
@@ -28,10 +29,18 @@ main
 
 
 printPositions(int passedArray) function
-    for(numOfHorses) {
+    for numOfHorses
         int array = {'*', '*', '*', '*', '*', '*', '*', '*', '*', '*'}
         array[passedArray[i]] = i
         print array
-    }
-}
+
+
+
+changePositions(int passedArray) function
+    for numOfHorses
+        bool advance
+        if time % 2 = 0
+            advance = true
+        else
+            advance = false
 ```
