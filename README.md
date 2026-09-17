@@ -13,8 +13,12 @@
 
 
 ```
+include iostream
+include random
+
 printPositons function initializer
 changePositions function initializer
+boolean checkForWinner function initializer
 
 constant int for position to win
 constant int for number of horses
@@ -25,12 +29,15 @@ main
 
     bool keepGoing true
     while keepgoing
-        
+        changePositions(horsePositions)
+        if checkForWinner is not -1
+            keepGoing = false
+            print the winner is checkForWinner
 
 
 printPositions(int passedArray) function
     for numOfHorses
-        int array = {'*', '*', '*', '*', '*', '*', '*', '*', '*', '*'}
+        int array = {'*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*'}
         array[passedArray[i]] = i
         print array
 
@@ -38,9 +45,20 @@ printPositions(int passedArray) function
 
 changePositions(int passedArray) function
     for numOfHorses
-        bool advance
-        if time % 2 = 0
-            advance = true
-        else
-            advance = false
+        if checkForWinner is -1
+            std::random_device rd;
+            std::mt19937 gen(rd());
+            std::uniform_int_distribution<> distr(0, 1);
+            int randomNum = distr(gen);
+    
+            if randomNum is 1
+                passedArray[i] += 1
+
+
+
+int checkForWinner(int passedArray)
+    bool winner = -1
+    for numOfHorse
+        if passedArray[i] is 14, winner = i
+    return winner
 ```
