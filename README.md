@@ -50,6 +50,7 @@ changePositions(int passedArray) function
             std::mt19937 gen(rd());
             std::uniform_int_distribution<> distr(0, 1);
             int randomNum = distr(gen);
+            (i had to lookup how to get a random number in c++ so i put the actual code here so i could look back and remember how to do it later)
     
             if randomNum is 1
                 passedArray[i] += 1
