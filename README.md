@@ -22,8 +22,9 @@ main
     horse positions array {0, 0, 0, 0, 0}
     printPositions(horsePosArr)
 
-printPositions(array)
-
+    bool keepGoing true
+    while keepgoing
+        
 
 
 printPositions(int passedArray) function
