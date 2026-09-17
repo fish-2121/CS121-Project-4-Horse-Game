@@ -16,6 +16,8 @@ int main() {
     while (keepGoing) {
         movePositions(horses);
         
+        printPositions(horses);
+        
         if (checkForWinner(horses) != -1) {
             keepGoing = false;
             std::cout << "The winning horse is number " << checkForWinner(horses) << "!" << std::endl;
@@ -38,7 +40,7 @@ void printPositions(int positionNums[]) {
 
 void movePositions(int positionNums[]) {
     for (int i = 0; i < horsesAmount; i++) {
-        if (checkForWinner() == -1) {
+        if (checkForWinner(positionNums) == -1) {
             std::random_device rd;
             std::mt19937 gen(rd());
             std::uniform_int_distribution<> distr(0, 1);
@@ -55,8 +57,8 @@ int checkForWinner(int positionNums[]) {
     int winner = -1;
     
     for (int i = 0; i < horsesAmount; i++) {
-        if (positionNums[i] = 14) {
-            winner = positionNums[i];
+        if (positionNums[i] == 14) {
+            winner = i;
         }
     }
     
