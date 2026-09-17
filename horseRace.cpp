@@ -36,6 +36,7 @@ void printPositions(int positionNums[]) {
         }
         std::cout << std::endl;
     }
+    std::cout << std::endl;
 }
 
 void movePositions(int positionNums[]) {
