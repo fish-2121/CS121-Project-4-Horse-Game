@@ -41,7 +41,7 @@ changePositions(int passedArray) function - this will get a random number for ea
             std::mt19937 gen(rd());
             std::uniform_int_distribution<> distr(0, 1);
             int randomNum = distr(gen);
-            (i had to lookup how to get a random number in c++ so i put the actual code here so i could look back and remember how to do it later)
+            (i had to lookup how to get a random number in c++ so i put the actual code here so i could look back and remember how to do it later. this code makes either a 0 or 1 which will be used to decide if the horse advances)
     
             if randomNum is 1
                 passedArray[i] += 1
