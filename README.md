@@ -26,7 +26,7 @@ main
             print the winner is checkForWinner
 
 
-printPositions(int passedArray) function
+printPositions(int passedArray) function - this will take the array of horse positions and print each of them out
     for numOfHorses
         int array = {'*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*'}
         array[passedArray[i]] = i
@@ -34,7 +34,7 @@ printPositions(int passedArray) function
 
 
 
-changePositions(int passedArray) function
+changePositions(int passedArray) function - this will get a random number for each horse, either 0 or 1, and decide if the horse should move forward
     for numOfHorses
         if checkForWinner is -1
             std::random_device rd;
@@ -48,7 +48,7 @@ changePositions(int passedArray) function
 
 
 
-int checkForWinner(int passedArray)
+int checkForWinner(int passedArray) - this will go through and check if a horse is in the winning position (14). if not, it return -1. if there is a winning horse, it returns the horse number
     bool winner = -1
     for numOfHorse
         if passedArray[i] is 14, winner = i
