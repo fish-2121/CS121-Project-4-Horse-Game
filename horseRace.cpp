@@ -14,6 +14,9 @@ int main() {
     
     bool keepGoing = true;
     while (keepGoing) {
+        std::cout << "Press enter to continue" << std::endl;
+        std::cin.get();
+        
         movePositions(horses);
         
         printPositions(horses);
