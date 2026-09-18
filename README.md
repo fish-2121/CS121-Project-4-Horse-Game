@@ -1,17 +1,8 @@
 # CS121-Project-4-Horse-Game
 ### In this project we create a horse racing game where the winning horse is randomized
+### I ran out of free codespaces for the month so I've been using an online c++ code editor to make and test the code, but now there isn't an already compiled file in the repo so you might have to compile it yourself. :/
 
-### Algorithm
-- Outside of main, create a constant int variable for the position for a horse to win (10), and another for the number of horses (5).
-- Create array of 5 integers inside of main. These will represent the positions of the 5 horses. They will all start with the value of 0.
-- Start by printing out the horse positions using the printPositions function
- 
-
-### printPositons function
-- Create a function to print out the positions of the horses.
-- This function will have one parameter for the array of horse positions.
-
-
+# Algorithm
 ```
 include iostream
 include random
