@@ -48,7 +48,7 @@ changePositions(int passedArray) function - this will get a random number for ea
 
 
 
-int checkForWinner(int passedArray) - this will go through and check if a horse is in the winning position (14). if not, it return -1. if there is a winning horse, it returns the horse number
+int checkForWinner(int passedArray) - this will go through and check if a horse is in the winning position (14). if not, it returns -1. if there is a winning horse, it returns the horse number
     bool winner = -1
     for numOfHorse
         if passedArray[i] is 14, winner = i
