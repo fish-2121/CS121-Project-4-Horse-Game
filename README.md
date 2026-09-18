@@ -1,5 +1,6 @@
 # CS121-Project-4-Horse-Game
 ### In this project we create a horse racing game where the winning horse is randomized
+### The file horseRace.cpp is the actual project. turnTest.cpp was just me testing something so you can just ignore that.
 ### I ran out of free codespaces for the month so I've been using an online c++ code editor to make and test the code, but now there isn't an already compiled file in the repo so you might have to compile it yourself. :/
 
 # Algorithm
